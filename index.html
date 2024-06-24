@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css"
+    />
+  </head>
+  <body>
+    <section class="top-section">
+      <div class="image-container">
+        <div class="item left">
+          <img src="img/img1.png" alt="image 1" class="img1" />
+        </div>
+        <div class="item upper_right">
+          <img src="img/img2.png" alt="image 2" class="img2" />
+        </div>
+        <div class="item lower_right">
+          <img src="img/img3.png" alt="image 3" class="img3" />
+        </div>
+      </div>
+    </section>
+    <section class="middle-section">
+      <div class="flexbox-container">
+        <div class="product">
+          <h2 class="title">TATTOO SUPPLIES</h2>
+          <div class="photo-button-container">
+            <img src="img/img4.png" alt="Photo 4" class="photo" />
+            <button class="button">Shop now</button>
+          </div>
+        </div>
+        <div class="product">
+          <h2 class="title">BODY JEWELRY</h2>
+          <div class="photo-button-container">
+            <img src="img/img4.png" alt="Photo 4" class="photo" />
+            <button class="button">Shop now</button>
+          </div>
+        </div>
+        <div class="product">
+          <h2 class="title">PIERCING SUPPLIES</h2>
+          <div class="photo-button-container">
+            <img src="img/img4.png" alt="Photo 4" class="photo" />
+            <button class="button">Shop now</button>
+          </div>
+        </div>
+        <div class="product">
+          <h2 class="title">MEDICAL SUPPLIES</h2>
+          <div class="photo-button-container">
+            <img src="img/img4.png" alt="Photo 4" class="photo" />
+            <button class="button">Shop now</button>
+          </div>
+        </div>
+        <div class="product" id="product5">
+          <h2 class="title">PERMANENT MAKEUP</h2>
+          <div class="photo-button-container">
+            <img src="img/img4.png" alt="Photo 4" class="photo" />
+            <button class="button">Shop now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bottom-section">
+      <div>
+        <p class="carousel-title">NEW PRODUCTS</p>
+      </div>
+      <div class="carousel">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+              <div class="card glide__slide">
+                <img src="img/img5.png" alt="Product 1" class="product-photo" />
+                <p class="price">$449.99</p>
+                <p class="description">
+                  Rook Quill Rotary Tattoo Machine - Copper
+                </p>
+              </div>
+              <div class="card glide__slide">
+                <img src="img/img5.png" alt="Product 2" class="product-photo" />
+                <p class="price">$449.99</p>
+                <p class="description">
+                  Rook Quill Rotary Tattoo Machine - Blue
+                </p>
+              </div>
+              <div class="card glide__slide">
+                <img src="img/img5.png" alt="Product 3" class="product-photo" />
+                <p class="price">$1,199.99</p>
+                <p class="description">
+                  Pre-order - Inkjecta FLite X1 Wireless Tattoo Machine...
+                </p>
+              </div>
+              <div class="card glide__slide">
+                <img src="img/img5.png" alt="Product 4" class="product-photo" />
+                <p class="price">$1,199.99</p>
+                <p class="description">
+                  Pre-order - Inkjecta FLite X1 Wireless Tattoo Machine...
+                </p>
+              </div>
+              <div class="card glide__slide">
+                <img src="img/img5.png" alt="Product 5" class="product-photo" />
+                <p class="price">$1,199.99</p>
+                <p class="description">
+                  Pre-order - Inkjecta FLite X1 Wireless Tattoo Machine...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              >
+            </button>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const glide = new Glide(".glide", {
+        type: "carousel",
+        perView: 5,
+        breakpoints: {
+          1200: {
+            perView: 4,
+          },
+          992: {
+            perView: 3,
+          },
+          768: {
+            perView: 2,
+          },
+          576: {
+            perView: 1,
+          },
+        },
+      });
+
+      glide.mount();
+    </script>
+  </body>
+</html>
